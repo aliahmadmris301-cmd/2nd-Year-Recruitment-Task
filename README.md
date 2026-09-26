@@ -1,21 +1,17 @@
-# AIML Recruitment 2026 — <Your Name>
+# AIML Recruitment 2026 — Ali Ahmad
 
 ## 1. Candidate Details
-- **Name:** <Your Name>
-- **Branch / Year:** <e.g. B.Tech CSE, 2nd Year>
+- **Name:** Ali Ahmad
+- **Branch / Year:** B.Tech CSE(Data Science)/2-Year
 - **Track:** AI-ML Recruitment Task — Second Years
 
-## 2. Tasks Completed
-- ✅ **Task 1: Air Quality Forecasting**
-- ⬜ Task 2: Neural Network — not attempted (the brief requires at least one task; let me know if you'd like this added too)
-
-## 3. Problem Statement
+## 2. Problem Statement
 Using the [UCI Air Quality dataset](https://archive.ics.uci.edu/dataset/360/air+quality) — hourly
 gas-sensor and reference-analyzer readings from an Italian city, March 2004 to April 2005 — the
 goal was to understand historical air-quality patterns and build a model that forecasts a
 pollutant's concentration **one hour ahead**, specifically next-hour `CO(GT)`.
 
-## 4. Approach
+## 3. Approach
 1. **Cleaned** the raw dataset: fixed the `;` / `,` CSV formatting, merged `Date` + `Time` into an
    hourly datetime index, replaced the `-200` missing-value sentinel with `NaN`, dropped the
    ~90%-missing `NMHC(GT)` column, and filled the remaining gaps with time-based interpolation.
@@ -32,12 +28,12 @@ pollutant's concentration **one hour ahead**, specifically next-hour `CO(GT)`.
    residual/error analysis, feature importance, and a written discussion of time-series data
    leakage and how it was avoided.
 
-## 5. Technologies Used
+## 4. Technologies Used
 - **Language:** Python 3
 - **Libraries:** pandas, NumPy, matplotlib, seaborn, scikit-learn
 - **Environment:** Jupyter / Google Colab
 
-## 6. Results
+## 5. Results
 
 | Model | Split | MAE | RMSE | R² |
 |---|---|---|---|---|
@@ -51,7 +47,7 @@ Both models clearly beat the naive baseline. Random Forest has the best raw test
 much larger train/test gap — i.e. more overfitting — than Linear Regression. The current hour's
 own `CO(GT)` reading is by far the most important predictor of the next hour's value.
 
-## 7. Key Learnings
+## 6. Key Learnings
 1. Real-world sensor datasets often encode missingness with sentinel values (here, `-200`)
    instead of blanks, and this can produce misleading artifacts — 31 rows initially flagged as
    "duplicates" turned out to just be fully-offline hours, not genuine repeated observations.
@@ -66,7 +62,7 @@ own `CO(GT)` reading is by far the most important predictor of the next hour's v
    (e.g. a metal-oxide sensor's temperature-related cross-sensitivity), not just abstract
    statistics.
 
-## 8. Challenges
+## 7. Challenges
 **Challenge:** The raw `AirQualityUCI.csv` file uses `;` as a separator and `,` as the decimal
 mark (European convention), plus spurious trailing empty columns/rows left over from the original
 export — reading it with pandas' default settings silently produces garbage columns and broken
