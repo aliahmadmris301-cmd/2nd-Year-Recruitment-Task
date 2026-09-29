@@ -1,14 +1,12 @@
-# AIML Recruitment 2026 — <Your Name>
+# AIML Recruitment 2026 — <Ali Ahmad>
 
 ## 1. Candidate Details
-- **Name:** <Your Name>
-- **Branch / Year:** <e.g. B.Tech CSE, 2nd Year>
+- **Name:** <Ali Ahmad>
+- **Branch / Year:** B.Tech CSE(Data Science), 2nd Year
 - **Track:** AI-ML Recruitment Task — Second Years
-
 ## 2. Tasks Completed
 - ✅ **Task 1: Air Quality Forecasting**
 - ✅ **Task 2: Neural Network (MNIST digit classification)**
-
 ## 3. Problem Statement
 
 **Task 1 — Air Quality Forecasting:** Using the [UCI Air Quality dataset](https://archive.ics.uci.edu/dataset/360/air+quality)
