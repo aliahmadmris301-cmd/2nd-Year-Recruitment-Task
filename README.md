@@ -1,7 +1,7 @@
 # AIML Recruitment 2026—<Ali Ahmad>
 
 ## 1. Candidate Details
-- **Name: <Ali Ahmad>
+- **Name:** `Ali Ahmad`
 - **Branch / Year:** B.Tech CSE(Data Science), 2nd Year
 - **Track:** AI-ML Recruitment Task — Second Years
 ## 2. Tasks Completed
