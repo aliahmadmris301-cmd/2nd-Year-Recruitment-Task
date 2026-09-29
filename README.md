@@ -1,4 +1,4 @@
-# AIML Recruitment 2026—<Ali Ahmad>
+# AIML Recruitment 
 
 ## 1. Candidate Details
 - **Name:** `Ali Ahmad`
